@@ -1,4 +1,4 @@
-# Create-spring-boot-app
+# Create-spring-boot-components
 
 ## Description
 A bash script to automate the creation of the Controller, Service, Repository and model components of a Spring Boot application. 
@@ -29,14 +29,14 @@ There is NO WARRANTY, to the extent permitted by law.
 
 4. Grant permission for script to be executable
 ```
-chmod +x create-spring-boot-app.sh
+chmod +x create-spring-boot-components.sh
 ```
 
 5. Navigate to current spring boot project's root directory
 
-6. Run script via `./create-spring-boot-app.sh <name>`. Provide an argument `name` that will be the name of the classes.
+6. Run script via `./create-spring-boot-components.sh <name>`. Provide an argument `name` that will be the name of the classes.
 ```
-$ ~/Downloads/./create-spring-boot-app.sh order
+$ ~/Downloads/./create-spring-boot-components.sh order
 creating the following files:
 >>> models/Order.java
 >>> controllers/OrderController.java

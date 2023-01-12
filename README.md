@@ -29,20 +29,18 @@ This is free software; you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 ```
 
-4. Navigate to directory containing the script
-
-5. Grant permission for script to be executable
+4. Grant permission for script to be executable
 ```
-chmod +x create-spring-boot-components.sh
+chmod +x ~/Downloads/create-spring-boot-components/create-components.sh
 ```
 
 ### How to use
 
 1. Navigate to current spring boot project's root directory
 
-2. Run script via `./create-spring-boot-components.sh <name>`. Provide an argument `name` that will be the name of the classes.
+2. Run script via `./create-components.sh <name>`. Provide an argument `name` that will be the prefix of the class names.
 ```
-$ ~/Downloads/./create-spring-boot-components.sh order
+$ ~/Downloads/create-spring-boot-components/./create-components.sh order
 creating the following files:
 >>> models/Order.java
 >>> controllers/OrderController.java

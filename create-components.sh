@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # get prefix from input
 OBJ=$1
 OBJ="$(tr '[:lower:]' '[:upper:]' <<< ${OBJ:0:1})${OBJ:1}"
@@ -21,7 +21,7 @@ DIRS_TO_CREATE=(models controllers services repositories)
 mkdir "${DIRS_TO_CREATE[@]}"
 
 # create files and directories
-printf "creating the following files:\n"
+printf "creating files:\n"
 
 for i in "${!DIRS_TO_CREATE[@]}"; do
     DIR=${DIRS_TO_CREATE[$i]}
@@ -30,7 +30,7 @@ for i in "${!DIRS_TO_CREATE[@]}"; do
     F_NAME="${DIR}/${OBJ}${F_SUFFIX}.java" 
     PACKAGE_NAME="${PACKAGE_PREFIX}.${DIR}"
 
-    # insert boilerplate into files
+    # insert boilerplate
     echo -e "package $PACKAGE_NAME;\n" > $F_NAME
     
     # insert imports and annotations
